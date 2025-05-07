@@ -11,46 +11,39 @@
     <form action="https://httpbin.dev/post" method="post">
         <fieldset>
             <legend>Dados básicos</legend>
-            <div>
+            
                 <label for="name">Nome:</label>                
                 <input type="text" id="name" name="usuario_nome" required><br><br>
-            </div>
-            <div>
+            
                  <label for="email">Email:</label>                 
                 <input type="email" id="email" name="usuario_email" required><br><br>
-            </div>
-            <div>
+            
                 <label for="senha">Senha:</label>                
                 <input type="password" id="senha" name="usuario_senha" required><br><br>
-            </div>
+
         </fieldset>
 
         <fieldset>
             <legend>Quais tecnologias web te interessam?</legend>
-            <div>                
+                            
                 <input type="checkbox" id="tecnologia1" name="linguagens" value="html">
-                <label for="tecnologia1">HTML</label>
-            </div>
-            <div>                
+                <label for="tecnologia1">HTML</label><br>
+                            
                 <input type="checkbox" id="tecnologia2" name="linguagens" value="css">
-                <label for="tecnologia2">CSS</label>
-            </div>
-            <div>
+                <label for="tecnologia2">CSS</label><br>
+            
                 <input type="checkbox" id="tecnologia3" name="linguagens" value="javascript">
                 <label for="tecnologia3">JavaScript</label>
-            </div>
         </fieldset>
 
         <fieldset>
             <legend>Você é de Esperança - PB?</legend>
-            <div>
+            
                 <input type="radio" id="sim" name="cidade" value="sim">
-                <label for="sim">Sim</label>
-            </div>
-            <div>
+                <label for="sim">Sim</label><br>
+            
                 <input type="radio" id="nao" name="cidade" value="não">
                 <label for="nao">Não</label>
-            </div>
         </fieldset>
 
         <button type="submit">Enviar</button>

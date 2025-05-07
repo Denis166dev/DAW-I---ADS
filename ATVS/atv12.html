@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[código] 12 - HTML - Tags Formulário - Parte 2</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    
+    <form action="https://httpbin.dev/post" method="post">
+        <fieldset>
+            <legend>Dados básicos</legend>
+            
+                <label for="name">Nome:</label>                
+                <input type="text" id="name" name="usuario_nome" required><br><br>
+            
+                 <label for="email">Email:</label>                 
+                <input type="email" id="email" name="usuario_email" required><br><br>
+            
+                <label for="senha">Senha:</label>                
+                <input type="password" id="senha" name="usuario_senha" required><br><br>
+
+                <label for="nascimento">Data de nascimento:</label>                
+                <input type="date" id="nascimento" name="usuario_nascimento"><br><br>
+
+                <label for="idade">Qual a sua idade?</label>                
+                <input type="number" id="idade" name="usuario_idade" min="1"><br><br>
+
+                <label for="cor">Qual a sua cor predileta?</label>                
+                <input type="color" id="cor" name="usuario_cor"><br><br>
+
+                <label for="telefone">Qual o seu telefone?</label>                
+                <input type="tel" id="telefone" name="usuario_telefone" pattern="[0-9]{11}" placeholder="deve haver 11 digítos"><br><br>
+
+                <label for="turno">Qual o turno que você prefere estudar?</label><br>
+                <select name="turno" id="turno">
+                    <option value="">Escolha uma opção</option>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>               
+                
+        </fieldset>
+
+        <fieldset>
+            <legend>Quais tecnologias web te interessam?</legend>
+                            
+                <input type="checkbox" id="tecnologia1" name="linguagens" value="html">
+                <label for="tecnologia1">HTML</label><br>
+                            
+                <input type="checkbox" id="tecnologia2" name="linguagens" value="css">
+                <label for="tecnologia2">CSS</label><br>
+            
+                <input type="checkbox" id="tecnologia3" name="linguagens" value="javascript">
+                <label for="tecnologia3">JavaScript</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Você é de Esperança - PB?</legend>
+            
+                <input type="radio" id="sim" name="cidade" value="sim">
+                <label for="sim">Sim</label><br>
+            
+                <input type="radio" id="nao" name="cidade" value="não">
+                <label for="nao">Não</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
